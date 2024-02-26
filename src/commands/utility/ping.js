@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { bot } = require('../../index.js')
 require('dotenv').config();
 
 module.exports = {
