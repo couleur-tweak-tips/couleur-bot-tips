@@ -1,4 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
+const { bot } = require('../../index.js')
 require('dotenv').config();
 
 module.exports = {
@@ -6,6 +7,9 @@ module.exports = {
 		.setName('ping')
 		.setDescription('Pong!'),
 	async execute(interaction) {
-
+		await interaction.channel.send('Pinging...').then(async reply => {
+			reply.delete();
+			await interaction.reply(`:ping_pong: Measured latency at \`${reply.createdTimestamp - interaction.createdTimestamp}ms\`.\n:desktop: Measured API latency at \`${Math.round(reply.client.ws.ping)}ms\`.`)
+		});
 	},
 };
