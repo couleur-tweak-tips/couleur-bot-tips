@@ -1,0 +1,18 @@
+[
+    {
+        "pattern": "^(?!.*Traceback \\(most recent call last\\):).*Invalid data found when processing input.*$",
+        "response": "Include a whole screenshot pwease"
+    },
+    {
+        "pattern": "(ctt killed my dog and made my house explode)",
+        "response": "cope"
+    },
+    {
+        "pattern": "(Driver does not support the required nvenc)",
+        "response": "update ur nvidia driver!!"
+    },
+    {
+        "pattern": "(i need help)",
+        "response": "ITE, explain up!1"
+    }
+]
